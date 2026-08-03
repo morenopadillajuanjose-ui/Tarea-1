@@ -1,12 +1,112 @@
 <html>
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Kadwa:wght@400;700&family=Kaushan+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Servicios</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" >
+<style>
 
+  body {
+    font-family: "Kaushan Script", cursive;
+  }
+
+  @keyframes cambiodecolor {
+    0% {
+      color: black;
+    }
+
+    25% {
+      color: rgb(34, 82, 49);
+    }
+    50% {
+      color: rgb(83, 12, 51);
+    }
+    75% {
+      color: rgb(137, 104, 34);
+    }
+    100% {
+      color: rgb(15, 230, 219);
+    }
+  }
+
+  @keyframes rotar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media( width <= 600px){
+    .texto {
+      color: brown;
+      font-size: 20px;
+
+    }
+  }
+
+  @media( width <= 601px){
+    .texto {
+      color: rgb(33, 68, 226);
+      font-size: 30px;
+      
+    }
+  }
+
+    .centrado {
+      text-align: center;
+    }
+
+
+    #ourmodels img {
+      width: 100%;
+      height: 90%;
+      margin-top: 20%;
+    }
+
+    #ourmodels {
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 5%;
+    }
+
+    #nero {
+      padding: 5%;
+      background-color: rgb(206, 205, 205);
+    }
+
+    #nero .texto {
+      margin-top: 20%;
+      padding: 7%
+    }
+
+    .texto {
+      padding-top: 5%;
+      animation: rotar 5s linear infinite;
+    }
+
+    #hero .texto {
+      margin-top: 30%;
+    }
+
+    footer {
+      background-color: black;
+      padding: 5%;
+      color: white;
+    }
+
+    .arriba {
+      color: blue;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,7 +127,13 @@
               <a class="nav-link" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#ourmodels">Our model</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Productos y servicios">Productos y servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Preguntas">Preguntas</a>
             </li>
           </ul>
         </div>
@@ -40,6 +146,7 @@
       <div class="row">
         <div class="col-6">
           <div class="texto">
+            <span><i class="fa-solid fa-heart"></i></span>
             <h1>Beauty is on the Outside</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Apenam consectetur, doloremque quibusdam nobis
               rerum, autem saepe animi corporis quod magnam tempore porro, reprehendent voluptate suscipit ducimus ab
@@ -74,7 +181,7 @@
       </div>
     </section>
 
-    <section id="tipas" class="container">
+    <section id="ourmodels" class="container">
       <div class="texto">
         <h1>Our Model</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -143,6 +250,85 @@
 
     </section>
 
+    <section id="Productos y servicios" style="background-color: rgb(222, 221, 221); padding: 5%;">
+      <div class="container">
+        <div class="centrado">
+          <h2 class="">Productos y servicios</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Apenam consectetur, doloremque quibusdam
+            nobis
+            rerum</p>
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Producto</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Servicio</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
+
+          <div class="row">
+            <div class="col-4">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/1.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/1.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/1.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -151,71 +337,99 @@
 
 
 
- </main>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          Servicios que ofrece la empresa
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section id="Preguntas">
+      <div class="container">
+        <div class="centrado">
+          <h2 class="">Preguntas</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Apenam consectetur, doloremque quibusdam
+            nobis
+            rerum</p>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+  </main>
 
   <footer>
     <p>Juan José Moreno - 12411148</p>
   </footer>
 
-  <style>
-    #tipas img {
-      width: 100%;
-      height: 90%;
-      margin-top: 20%;
-    }
-
-    #tipas {
-      text-align: center;
-    }
-
-    section {
-      margin-bottom: 5%;
-    }
-
-    #nero {
-      padding: 5%;
-      background-color: rgb(206, 205, 205);
-    }
-
-    #nero .texto {
-      margin-top: 20%;
-      padding: 7%
-    }
-
-    .texto {
-      padding-top: 5%;
-    }
-
-    #hero .texto {
-      margin-top: 30%;
-    }
-
-    footer {
-      background-color: black;
-      padding: 5%;
-      color: white;
-    }
-
-    .arriba {
-      color: blue;
-    }
-  </style>
-
-
-
-</body>
-
-
-
-
-
-
-
-
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>
